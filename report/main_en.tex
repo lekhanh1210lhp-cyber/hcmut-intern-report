@@ -19,6 +19,9 @@
 \usepackage{enumerate}
 \usepackage{color}
 \usepackage{graphicx}
+\makeatletter
+\define@key{Gin}{artifact}[]{}
+\makeatother
 \let\oldincludegraphics\includegraphics
 \renewcommand{\includegraphics}[2][]{%
   \oldincludegraphics[width=\textwidth,keepaspectratio,#1]{#2}%
